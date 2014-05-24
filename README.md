@@ -10,8 +10,17 @@ Chef cookbook with recipes to install a-blog cms.
 ## Installation
 
 ```bash
+git clone https://github.com/ogom/cookbook-acms.git
+cd cookbook-acms/
 bundle install --path=.bundle
 bundle exec vagrant up
+```
+
+### Amazon Web Services (AWS)
+
+```bash
+cp example/Vagrantfile_aws Vagrantfile
+bundle exec vagrant up --provider=aws
 ```
 
 ## Attributes
