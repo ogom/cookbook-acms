@@ -3,6 +3,8 @@ a-blog cms Cookbook
 
 Chef cookbook with recipes to install a-blog cms.
 
+![acms](http://ogom.github.io/cookbook-acms/assets/img/acms.gif)
+
 ## Supported Platforms
 
 * Ubuntu (12.04, 12.10)
@@ -14,6 +16,7 @@ git clone https://github.com/ogom/cookbook-acms.git
 cd cookbook-acms/
 bundle install --path=.bundle
 bundle exec vagrant up
+open http://192.168.6.4/
 ```
 
 ### Amazon Web Services (AWS)
@@ -21,6 +24,7 @@ bundle exec vagrant up
 ```bash
 cp example/Vagrantfile_aws Vagrantfile
 bundle exec vagrant up --provider=aws
+open http://[subdomain].amazonaws.com/
 ```
 
 ## Attributes
@@ -42,18 +46,9 @@ Include `acms` in your node's `run_list`:
 }
 ```
 
-## Contributing
-
-1. Fork the repository on Github
-2. Create a named feature branch (i.e. `add-new-recipe`)
-3. Write your change
-4. Write tests for your change (if applicable)
-5. Run the tests, ensuring they all pass
-6. Submit a Pull Request
-
 ## Links
 
-* [Developer](http://developer.a-blogcms.jp)
+* [a-blog cms developer](http://developer.a-blogcms.jp)
 
 ## Authors
 
