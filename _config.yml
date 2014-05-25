@@ -3,7 +3,6 @@ markdown: redcarpet
 redcarpet:
   extensions:
   - tables
-  - with_toc_data
 pygments: true
 baseurl: "/cookbook-acms"
 encoding: UTF-8
