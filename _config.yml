@@ -1,0 +1,16 @@
+---
+markdown: redcarpet
+redcarpet:
+  extensions:
+  - tables
+  - with_toc_data
+pygments: true
+baseurl: "/cookbook-acms"
+encoding: UTF-8
+exclude:
+- README.md
+- vendor
+- tmp
+name: Cookbook a blog cms
+copyright: 2014, ogom
+theme: simplex
