@@ -18,4 +18,4 @@ bin/*
 
 # Share folder
 www/*
-
+!www/.gitkeep
