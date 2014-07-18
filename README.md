@@ -8,6 +8,7 @@ Chef cookbook with recipes to install a-blog cms.
 ## Supported Platforms
 
 * Ubuntu (12.04, 12.10)
+* CentOS (6.5)
 
 ## Installation
 
@@ -49,6 +50,9 @@ Include `acms` in your node's `run_list`:
 ## Links
 
 * [a-blog cms developer](http://developer.a-blogcms.jp)
+* [Bento](http://opscode.github.io/bento/)
+    * [opscode-ubuntu-12.04](http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_ubuntu-12.04_chef-provisionerless.box)
+    * [opscode-centos-6.5](http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-6.5_chef-provisionerless.box)
 
 ## Authors
 
