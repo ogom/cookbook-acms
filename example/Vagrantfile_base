@@ -17,6 +17,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.omnibus.chef_version = :latest
 
   # Every Vagrant virtual environment requires a box to build off of.
+  # config.vm.box = "opscode_centos-6.5"
   config.vm.box = "opscode_ubuntu-12.04_provisionerless"
 
   # The url from where the 'config.vm.box' box will be fetched if it

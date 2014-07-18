@@ -18,9 +18,17 @@ execute "Extracting and Building ionCube from Source" do
   not_if "test -d /usr/local/ioncube"
 end
 
-file "/etc/php5/conf.d/ioncube.ini" do
+
+case node["platform"]
+when "debian", "ubuntu"
+  ioncube_ini = "/etc/php5/conf.d/ioncube.ini"
+when "centos", "redhat", "scientific", "fedora", "amazon", "oracle"
+  ioncube_ini = "/etc/php.d/ioncube.ini"
+end
+
+file ioncube_ini do
   content "zend_extension=/usr/local/ioncube/ioncube_loader_lin_5.3.so"
-  not_if "test -f /etc/php5/conf.d/ioncube.ini"
+  not_if "test -f #{ioncube_ini}"
 end
 
 service "apache2" do
